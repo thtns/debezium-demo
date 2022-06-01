@@ -17,7 +17,7 @@ import java.util.List;
 
 /**
  * @author thtns
- * @description 纳税人标签实现
+ * @description 业务实现类
  * @date 2022/4/20
  */
 @Service("biz_card")
