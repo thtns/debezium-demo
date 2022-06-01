@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.thtns.debezium.demo.mapper.BizCardMapper">
+
+    <select id="listAllById" resultType="com.thtns.debezium.demo.model.BizCard">
+        select *
+        from biz_card
+        where id > #{id}
+        order by id asc
+            LIMIT ${pageSize}
+
+
+    </select>
+</mapper>

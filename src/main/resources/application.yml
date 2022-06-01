@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:55001/car
+    username: root
+    password: 12345678
+
+debezium:
+  historyFileName: /tmp/offset/dbhistory.dat
+  offsetFileName: /tmp/offset/offsets.dat
+  offsetTime: '1'
+  includeDb: car
+  includeTable: car.biz_card
+  instanceName: test-mssql-connector
+  ip: localhost
+  logicName: test-mssql-customer
+  port: 55001
